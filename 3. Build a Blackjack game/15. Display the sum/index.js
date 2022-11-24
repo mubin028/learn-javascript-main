@@ -6,9 +6,12 @@ let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
 let sumEL = document.querySelector("#sum-el")
+let cardsEl = document.querySelector("#cards-el")
+
 // 2. Store the sum paragraph in a variable called sumEl
 
 function startGame() {
+    cardsEl.textContent = "Cards: " + firstCard + " " + secondCard
     sumEL.textContent= "Sum: " + sum
     if (sum <= 20) {
         message = "Do you want to draw a new card?"
